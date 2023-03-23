@@ -41,7 +41,17 @@ schemas:
          * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
          * 'CONCLUSA' - 
          * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
-    example: "IN LAVORAZIONE"  
+    example: "IN LAVORAZIONE" 
+  AFormType:
+    description: dati aggiuntivi per la gestione italiana della richiesta
+    type: object
+    properties:
+      body:
+        description: Definizione form lato ANAC in formato JSON 
+        type: string
+        example: 
+                " Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
+                }"   
   SchedaGenericType:
     description: Oggetto che riporta tutti i dati della Pianificazione
     type: object
