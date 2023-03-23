@@ -22,11 +22,11 @@ schemas:
     maximum: 90
     minimum: -90
     type: number
-    StatoLottoEnum:
-      type: string
-      minimum: 1
-      enum: ['IN LAVORAZIONE', 'CONFERMATO', 'CANCELLATO', 'IN ATTESA DI PUBBLICAZIONE','IN PUBBLICAZIONE FERMATA','PUBBLICATO','NON AGGIUDICATO', 'AGGIUDICATO', 'IN SOTTOSCRIZIONE CONTRATTO','IN ESECUZIONE','ANNULLATO','SOSPESO', 'CONCLUSO','COLLAUDATO']
-      description: >
+  StatoLottoEnum:
+    type: string
+    minimum: 1
+    enum: ['IN LAVORAZIONE', 'CONFERMATO', 'CANCELLATO', 'IN ATTESA DI PUBBLICAZIONE','IN PUBBLICAZIONE FERMATA','PUBBLICATO','NON AGGIUDICATO', 'AGGIUDICATO', 'IN SOTTOSCRIZIONE CONTRATTO','IN ESECUZIONE','ANNULLATO','SOSPESO', 'CONCLUSO','COLLAUDATO']
+    description: >
         stato- Stato in cui si trova il lotto:
          * 'IN LAVORAZIONE' - Appalto inviato in aatesa di CIG
          * 'CONFERMATA' - Appalto inviato in aatesa di CIG
@@ -41,7 +41,7 @@ schemas:
          * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
          * 'CONCLUSA' - 
          * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
-      example: "IN LAVORAZIONE" 
+    example: "IN LAVORAZIONE" 
   SchedaGenericType:
     description: Oggetto che riporta tutti i dati della Pianificazione
     type: object
