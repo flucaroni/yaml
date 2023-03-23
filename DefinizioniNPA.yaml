@@ -166,7 +166,7 @@ schemas:
         example: '1213DF56'
   SchedaPartecipantiType:
       allOf: # estende il modello dati SchedaGenericType
-        - $ref: '#/components/schemas/SchedaGenericType'
+        - $ref: 'https://raw.githubusercontent.com/flucaroni/yaml/main/DefinizioniNPA.yaml#/schemas/SchedaGenericType'
       description: Oggetto che riporta tutti i dati della Scheda relativa Partecipanti
       type: object
       additionalProperties: false
@@ -174,7 +174,7 @@ schemas:
         partecipanti:
           type: array
           items:
-            $ref: '#/components/schemas/PartecipanteType'
+            $ref: 'https://raw.githubusercontent.com/flucaroni/yaml/main/DefinizioniNPA.yaml#/schemas/PartecipanteType'
   SchedaAggiudicazioneType:
       allOf: # estende il modello dati SchedaGenericType
         - $ref: '#/components/schemas/SchedaGenericType'
